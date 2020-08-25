@@ -1,4 +1,4 @@
-#Blink IP address on headless Raspberry Pi
+#Blink IP address on headless Raspberry Pi#
 
 [![Make Raspberry Pi blink its IP address](https://img.youtube.com/vi/XbJ5vT8FvXU/0.jpg)](https://www.youtube.com/watch?v=XbJ5vT8FvXU)
 
@@ -27,29 +27,22 @@ If there is no IP address, it blinks "000"
 Sometimes Wi-Fi will initialize with a bogus IP address but not connect, in which case, you may recognize
 that the last two octets blinked out don't match your network at all.
 
-Example blink patterns:
-<table border=1 cellspacing=0 cellpadding=5>
-<tr><th>IP4 address<th>Digits blinked<th>Roman digits<th>Blink pattern
-<tr><td>192.168.0.105<td><center>105<td><center>I X V<td>
-    <center><b>&bull; &nbsp; &mdash; &nbsp; -</b>
-<tr><td>192.168.2.349<td><center>2 349<td><center>II &nbsp; III IV IX<td>
-    <center><b>&bull; &bull; &nbsp; &nbsp; &nbsp; &bull; &bull; &bull; &nbsp; &bull; - &nbsp; &bull; &mdash;</b>
-<tr><td>10.10.456.789<td><center>456 789<td><center>IV V VI &nbsp; VII VIII IX<td>
-    <center><b>&bull; - &nbsp; - &nbsp; - &bull;
-    &nbsp; &nbsp; &nbsp;
-    - &bull; &bull; &nbsp;  - &bull; &bull; &bull; &nbsp; &bull; &mdash;</b>
-<tr><td>None (just 127.0.0.1)<td><center>000<td><center>X X X<td>
-    <center><b>&mdash; &nbsp; &mdash; &nbsp; &mdash;</b>
+##Example blink patterns##
 
-</table>
+| IP4 address           | Digits blinked | Roman digits         |Blink pattern|
+|-----------------------|:--------------:|:--------------------:|-----------------------|
+| 192.168.0.105         | 105            | I X V                | &bull; &nbsp; &mdash; &nbsp; -
+| 192.168.2.349         | 2 349          | II III IV IX         | &bull; &bull; &nbsp; &nbsp; &nbsp; &bull; &bull; &bull; &nbsp; &bull; - &nbsp; &bull; &mdash;
+| 10.10.456.789         | 456 789        | IV V VI  VII VIII IX | &bull; - &nbsp; - &nbsp; - &bull; &nbsp; &nbsp; &nbsp; - &bull; &bull; &nbsp;  - &bull; &bull; &bull; &nbsp; &bull; &mdash;
+| None (just 127.0.0.1) | 000            | X X X                | **&mdash; &nbsp; &mdash; &nbsp; &mdash;**
 
 Short blinks (I) are 0.1 seconds long
 Medium blinks (V) are 0.4 seconds long
-Long blinks (X) are 1.2 seconds long.
-Time between digits is 1 second.
-Time between octets is 2 seconds.
+Long blinks (X) are 1.2 seconds long
+Time between digits is 1 second
+Time between octets is 2 seconds
 
-The IP address is blinked after boot completes, waiting for Wi-Fi to initialize.  The IP address is blinked
+The IP address is blinked after boot completes, waiting for Wi-Fi to initialize. The IP address is blinked
 ten times, with a three second pause between.  After that the status LED is returned to its default
 functionality, to blink on flash card access.
 On Raspbery Pi zero W, there is only one green LED used for power and status, so it blinks that one.

@@ -1,5 +1,5 @@
 <h1>Blink IP address on headless Raspberry Pi</h1>
-On YouTube: https://youtube.com/embed/XbJ5vT8FvXU
+[![Make Raspberry Pi blink its IP address](https://img.youtube.com/vi/XbJ5vT8FvXU/0.jpg)](https://www.youtube.com/watch?v=XbJ5vT8FvXU)
 <p>
 I often have this problem.  I have a headless (no monitor or keyboard) Raspberry Pi,
 put a flash card in already configured for my network (using another Raspberry Pi), 

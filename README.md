@@ -30,7 +30,7 @@ that the last two octets blinked out don't match your network at all.
 <table border=1 cellspacing=0 cellpadding=5>
 <tr><th>IP4 address<th>Digits blinked<th>Roman digits<th>Blink pattern
 <tr><td>192.168.0.105<td><center>105<td><center>I X V<td>
-    <center><b>&bull; &nbsp; &mdash; &nbsp; &bull; -</b>
+    <center><b>&bull; &nbsp; &mdash; &nbsp; -</b>
 <tr><td>192.168.2.349<td><center>2 349<td><center>II &nbsp; III IV IX<td>
     <center><b>&bull; &bull; &nbsp; &nbsp; &nbsp; &bull; &bull; &bull; &nbsp; &bull; - &nbsp; &bull; &mdash;</b>
 <tr><td>10.10.456.789<td><center>456 789<td><center>IV V VI &nbsp; VII VIII IX<td>
